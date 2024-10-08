@@ -42,5 +42,21 @@ public class BookRepository {
 			return listOfBooks;
 		}
 		
+		//p.189
+		public Book getBookById(String bookId) {
+			Book bookById = null;
+			
+			for (int i = 0; i < listOfBooks.size(); i++) {
+				Book book = listOfBooks.get(i);
+				
+				if (book != null && book.getBookID() != null &&
+						book.getBookID().equals(bookId)) {
+					bookById = book;
+					break;
+					
+				}
+			}
+			return bookById;
+		}
 		
 }

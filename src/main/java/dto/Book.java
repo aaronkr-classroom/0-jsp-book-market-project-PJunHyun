@@ -6,7 +6,7 @@ public class Book implements Serializable{
 
 		private static final long serialVersionUID = -427470057203867700L;
 		
-		private String bookID;			// 도서ID
+		private String BookID;			// 도서ID
 		private String name;			// 도서명
 		private int unitPrice;			// 가격
 		private String author;			// 저자
@@ -22,18 +22,18 @@ public class Book implements Serializable{
 			super(); //Serializable() 부모 클래스의 생성자를 호출하기
 		}
 		
-		public Book(String bookID, String name, Integer unitPice) {
-			this.bookID = bookID;
+		public Book(String BookID, String name, Integer unitPice) {
+			this.BookID = BookID;
 			this.name = name;
 			this.unitPrice = unitPrice;
 		}
 
 		public String getBookID() {
-			return bookID;
+			return BookID;
 		}
 
 		public void setBookID(String bookID) {
-			this.bookID = bookID;
+			this.BookID = BookID;
 		}
 
 		public String getName() {
